@@ -1,0 +1,73 @@
+The following greaterThan function accepts an array of integers, the size of the array, and a number as three arguments and displays all the numbers in the array that are greater than that number 
+// greaterThan function implementation 
+void greaterThan( int arr[], int size, int n)
+{
+     cout << "Numbers greater than " << n << " are: ";
+     for (int i =; i < size; i++)
+     {
+          if (arr[i] > n)
+              cout << arr[i] << " ";
+     }
+     cout << endl;
+} // end of greaterThan function
+
+Program to test the greaterThan function:
+
+// Header files section 
+#include <iostream>
+using namespace std;
+
+// function prototypes 
+void greaterThan(int arr[], int size, int N);
+void printArray(int arr[], int size);
+
+// start main function 
+int main()
+{
+    // create a constant for the size of the array
+    const int SIZE = 7;
+    
+    // create an array of integers 
+    int arr[] = {5, 0, 22, 6, 3, -3, 4 };
+    
+    // set a number n to 2
+    int n = 2;
+    // call the printArray function
+    printArray(arr, SIZE);
+    
+    // call the greaterThan function
+    greaterThan(arr, SIZE, n);
+    
+    return 0;
+} // end of main function
+
+// greaterThan function accepts an array of integers,
+// the size of the array, and a number as three arguments
+// and then displays all the numbers in the array that are
+// greater than that number 
+void greaterThan(int arr[], int size, int n)
+ {
+     cout << "Numbers greater than " << n << " are: ";
+     for (i= 0; i < size; i++)
+     {
+         if (arr[i] > n)
+             cout << arr[i] <<" ";
+     }
+     cout << endl;
+ } // end of greaterThan function
+ 
+ // printArray function accepts an array of integers and 
+ // the size of the array as two arguments and then prints 
+ // the numbers stored in the array.
+ void printArray(int arr[], int size)
+ {
+      cout << "Numbers stored in the array: ";
+      for (int i = 0; i < size; i++)
+      {
+          cout << arr[i} << " ";
+          }
+          cout << endl;
+ } // end of printArray function
+    
+ 
+ 
